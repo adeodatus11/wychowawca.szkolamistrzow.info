@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jak zmienić hasło uczniowi w ZPE — Strona wychowawcy ZSZ5</title>
+  <meta name="description" content="Prosta instrukcja dla nauczycieli: jak ustawić nowe hasło uczniowi na Zintegrowanej Platformie Edukacyjnej (ZPE), jak je bezpiecznie przekazać i co zrobić, gdy coś nie działa.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="integracja-klasy-polsko-ukrainskiej.css">
+  <style>
+    .zpe-steps { counter-reset: krok; list-style: none; margin: 24px 0; padding: 0; display: grid; gap: 12px; }
+    .zpe-steps li { counter-increment: krok; position: relative; margin: 0; padding: 14px 18px 14px 64px; background: #fff; border: 1px solid var(--line); border-radius: 8px; line-height: 1.55; }
+    .zpe-steps li::before { content: counter(krok); position: absolute; left: 16px; top: 13px; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 16px; line-height: 32px; text-align: center; }
+    .zpe-steps .zpe-hint { display: block; margin-top: 4px; font-size: 15px; color: var(--muted); }
+    .zpe-path { display: inline; padding: 1px 6px; border-radius: 4px; background: var(--accent-soft); font-weight: 600; white-space: nowrap; }
+    @media print { .zpe-steps li { break-inside: avoid; } .zpe-steps li::before { border: 1px solid #000; } }
+  </style>
+</head>
+<body>
+  <a class="guide-skip" href="#tresc">Przejdź do treści artykułu</a>
+  <header class="site-header portal-header">
+    <div class="portal-topbar">
+      <a class="brand-strip brand-strip-full" href="index.html" aria-label="Strona główna">
+        <img class="brand-logo-full" src="assets/logo-school-master-full.png" alt="Zespół Szkół Zawodowych nr 5 we Wrocławiu - Szkoła Mistrzów" width="1931" height="301">
+        <img class="brand-logo-mark" src="assets/logo-orzel-zsz5.png" alt="Logo ZSZ5 we Wrocławiu" width="437" height="298">
+        <div class="brand-text">
+          <strong>Szkoła Mistrzów</strong>
+          <span>Zespół Szkół Zawodowych nr 5 we Wrocławiu</span>
+        </div>
+      </a>
+      <nav class="site-nav" aria-label="Główna nawigacja">
+        <a class="nav-link" href="index.html">Aktualności</a>
+        <a class="nav-link" href="wykaz-podzialow-grup.html">Podziały na grupy</a>
+        <a class="nav-link" href="nauczyciele-w-oddzialach.html">Nauczyciele w oddziałach</a>
+        <a class="nav-link" href="plan-pracy-wychowawczo-profilaktycznej.html">Plan pracy</a>
+        <a class="nav-link primary" href="baza-wiedzy.html" aria-current="page">Baza wiedzy</a>
+      </nav>
+    </div>
+    <div class="portal-hero guide-hero">
+      <p class="kicker">Baza wiedzy · ZPE</p>
+      <h1>Jak zmienić hasło uczniowi w ZPE</h1>
+      <p class="subtitle">Uczeń zapomniał hasła do Zintegrowanej Platformy Edukacyjnej? Nauczyciel może ustawić mu nowe w kilka minut, bez zakładania nowego konta.</p>
+      <p class="guide-meta">Opracowanie: <time datetime="2026-11-23">23 listopada 2026</time> · Materiał dla nauczycieli</p>
+      <div class="article-actions guide-actions"><a class="presentation-button" href="#kroki">Przejdź do instrukcji</a><button class="presentation-button secondary" type="button" onclick="window.print()">Drukuj artykuł / zapisz PDF</button></div>
+    </div>
+  </header>
+  <main id="tresc" class="guide-layout">
+    <article class="guide-article" aria-label="Artykuł dla nauczycieli">
+      <h2 id="najkrocej">Najkrócej</h2>
+      <div class="guide-callout">
+        <p><strong>Zaloguj się na zpe.gov.pl → otwórz listę uczniów → kliknij trzy kropki przy uczniu → wybierz zmianę hasła → zapisz → przekaż hasło uczniowi osobiście.</strong></p>
+      </div>
+      <p>Nie zakładaj uczniowi nowego konta. Uczniowie mają konta szkolne utworzone na podstawie danych z Systemu Informacji Oświatowej (SIO) i wystarczy zmienić hasło do istniejącego konta.</p>
+
+      <h2 id="zanim">Zanim zaczniesz</h2>
+      <ul>
+        <li><strong>Zaloguj się kontem szkolnym.</strong> Hasła uczniom mogą zmieniać nauczyciele zalogowani na konto szkolne z SIO, czyli to, którego dane przekazała szkoła. Konto założone samodzielnie nie daje dostępu do danych innych użytkowników.</li>
+        <li><strong>Sprawdź, czy uczeń wpisuje właściwy login.</strong> Często problemem jest literówka, włączony Caps Lock albo logowanie na inne konto, np. prywatne. Wielkość liter w haśle ma znaczenie.</li>
+        <li><strong>Na wspólnym komputerze użyj okna prywatnego.</strong> W Chrome i Edge otworzysz je skrótem <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>. Po pracy zamknij to okno.</li>
+      </ul>
+
+      <h2 id="kroki">Zmiana hasła krok po kroku</h2>
+      <ol class="zpe-steps">
+        <li>Wejdź na <a href="https://zpe.gov.pl/">zpe.gov.pl</a>, kliknij <strong>„Zaloguj się”</strong> i zaloguj się swoim kontem szkolnym.</li>
+        <li>Otwórz listę uczniów: <span class="zpe-path">Platforma → Uczniowie</span>.<span class="zpe-hint">W niektórych wersjach ZPE uczniów znajdziesz w module „Klasy / Grupy”. Otwórz tam klasę ucznia.</span></li>
+        <li>Znajdź ucznia na liście. Możesz wpisać jego nazwisko w wyszukiwarkę.</li>
+        <li>Kliknij ikonę <strong>trzech kropek</strong> przy nazwisku ucznia i wybierz opcję zmiany hasła.</li>
+        <li>Wpisz nowe hasło. Formularz pokaże, jakie warunki musi spełniać, np. minimalną długość. Zapisz zmiany.</li>
+        <li>Przekaż nowe hasło uczniowi osobiście i poproś, żeby od razu spróbował się zalogować, najlepiej jeszcze przy Tobie.</li>
+      </ol>
+
+      <h2 id="link">Zamiast hasła: link na e-mail ucznia</h2>
+      <p>Jeżeli na koncie ucznia jest jego prawdziwy adres e-mail, w tym samym menu trzech kropek możesz wysłać mu link do ustawienia nowego hasła. Wtedy uczeń sam wybiera hasło i nie musisz go znać.</p>
+      <p>Ta opcja nie zadziała, jeśli przy koncie nie ma prawdziwego adresu e-mail. W takiej sytuacji ustaw nowe hasło według kroków powyżej.</p>
+
+      <h2 id="bezpiecznie">Jak bezpiecznie przekazać hasło</h2>
+      <ul>
+        <li>Podaj hasło uczniowi osobiście albo zapisz je na kartce, którą dostanie tylko on.</li>
+        <li>Nie wysyłaj hasła na grupową rozmowę klasy i nie zapisuj go na tablicy.</li>
+        <li>Nie ustawiaj kilku uczniom tego samego hasła.</li>
+        <li>Unikaj haseł łatwych do odgadnięcia, takich jak imię ucznia, nazwa klasy albo „Haslo123”.</li>
+      </ul>
+
+      <h2 id="problemy">Gdy coś nie działa</h2>
+      <div class="guide-table-wrap">
+        <table class="guide-table">
+          <thead>
+            <tr><th scope="col">Problem</th><th scope="col">Co zrobić</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Nie widzę ucznia na liście</td><td>Sprawdź, czy jesteś zalogowany kontem szkolnym i czy wybrana jest właściwa szkoła oraz klasa. Jeśli ucznia nadal nie ma, zgłoś to osobie, która w szkole odpowiada za dostęp do ZPE. Najczęściej trzeba poprawić przypisanie ucznia w SIO.</td></tr>
+            <tr><td>Przy uczniu nie ma opcji zmiany hasła</td><td>Prawdopodobnie jesteś zalogowany kontem założonym samodzielnie albo nie masz potrzebnych uprawnień. Zaloguj się kontem szkolnym. Jeśli to nie pomoże, poproś o pomoc wychowawcę klasy lub osobę odpowiedzialną za ZPE w szkole.</td></tr>
+            <tr><td>Uczeń nadal nie może się zalogować</td><td>Sprawdź login, wielkość liter i Caps Lock. Upewnij się, że uczeń loguje się na stronie zpe.gov.pl, a nie w innej aplikacji. W razie potrzeby ustaw hasło jeszcze raz.</td></tr>
+            <tr><td>Żadna z tych rad nie pomogła</td><td>Skorzystaj z pomocy na stronie <a href="https://zpe.gov.pl/faq">zpe.gov.pl/faq</a> albo napisz do wsparcia ZPE.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Więcej o pracy z klasą na ZPE znajdziesz w przewodniku „ZPE bez pośpiechu” w rozdziale „Użytkownicy, grupy i odzyskiwanie dostępu”.</p>
+
+      <h2 id="zrodla">Źródła i materiały</h2>
+      <ol class="guide-source-list">
+        <li><a href="https://zpe.gov.pl/faq">Zintegrowana Platforma Edukacyjna: najczęściej zadawane pytania</a><span>Zmiana hasła ucznia przez nauczyciela, link resetujący wysyłany na adres e-mail ucznia, uprawnienia kont z samodzielnej rejestracji.</span></li>
+        <li><a href="https://zpe.gov.pl/a/logowanie-na-zpe/D5Q4G7ZOX">ZPE: logowanie do konta z danymi z bazy SIO</a><span>Konta szkolne nauczycieli i uczniów tworzone na podstawie danych z Systemu Informacji Oświatowej.</span></li>
+        <li><a href="https://metodyka.covepolska.pl/szkolenie%20ZPE/">„ZPE bez pośpiechu” — przewodnik dla nauczycieli</a><span>Szkolenie dla nauczycieli ZSZ5 w ramach projektu WIN4SMEs i COVE Polska. Rozdział 6: Użytkownicy, grupy i odzyskiwanie dostępu.</span></li>
+      </ol>
+      <p class="guide-note">Nazwy zakładek i przycisków w ZPE mogą się nieznacznie zmieniać po aktualizacjach platformy. Sama kolejność kroków pozostaje taka sama.</p>
+      <p><a href="baza-wiedzy.html">Wróć do bazy wiedzy</a></p>
+    </article>
+    <nav class="guide-toc" aria-label="Spis treści artykułu">
+      <h2>W tym artykule</h2>
+      <ol><li><a href="#najkrocej">Najkrócej</a></li><li><a href="#zanim">Zanim zaczniesz</a></li><li><a href="#kroki">Zmiana hasła krok po kroku</a></li><li><a href="#link">Link na e-mail ucznia</a></li><li><a href="#bezpiecznie">Jak bezpiecznie przekazać hasło</a></li><li><a href="#problemy">Gdy coś nie działa</a></li><li><a href="#zrodla">Źródła i materiały</a></li></ol>
+      <a href="baza-wiedzy.html">Wróć do bazy wiedzy</a>
+    </nav>
+  </main>
+</body>
+</html>
